@@ -30,7 +30,7 @@ class EvenOddTest {
     void TestPrintStatement() {
         setUp();
         EvenOdd.main(null);
-        assertEquals("1 is an odd number.", outputStreamCapture.toString());
+        assertEquals("1 is an odd number.", outputStreamCapture.toString().trim());
     }
 
     @Test
