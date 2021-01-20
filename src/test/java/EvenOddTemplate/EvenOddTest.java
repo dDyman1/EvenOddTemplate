@@ -7,7 +7,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -30,7 +29,7 @@ class EvenOddTest {
     void TestPrintStatement() {
         setUp();
         EvenOdd.main(null);
-        assertEquals("1 is an odd number.", outputStreamCapture.toString().trim());
+        assertEquals("one is an odd number.", outputStreamCapture.toString().trim());
     }
 
     @Test
